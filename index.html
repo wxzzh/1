@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+	
+	<header class="mui-bar mui-bar-nav">
+	    <div class="icb">
+        	<a class="iconfont icon-fanhui"></a>	
+        	</div>
+	    <h1 class="mui-title">填写邀请码</h1>
+	</header> 
+	
+	<div class="mui-content">
+		
+	<div class="mict">
+	<div class="bt">
+	<h3>
+	创建团队	
+	</h3>	
+	
+	<p>
+	共享统一通讯录，团队成员不加好友就能高效沟通	
+	</p>
+	</div>
+	
+	<div class="wbk">
+	<div class="mui-input-row">
+	    <label>团队名称</label>
+	    <div class="k1">
+	    <input type="text" placeholder="请填写真实姓名">
+	    </div>
+	</div>
+		
+	</div>
+	
+	<div class="wbk">
+	
+	<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	        	<label>团队名称</label>
+	            <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="请填写真实姓名">
+	    </div>
+	            </a>
+	        </li>
+	        	
+	<li class="mui-table-view-cell">
+		<label>所在行业</label>
+	            <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="为你所在行业制定工作方式">
+	    </div>
+	            </a>
+	        </li>
+	        
+	        <li class="mui-table-view-cell">
+	        	<label>团队规模</label>
+	            <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="请选择团队的人员规模">
+	    </div>
+	            </a>
+	        </li>
+	        
+	        <li class="mui-table-view-cell">
+	        	<label>地区</label>
+	            <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="江苏-苏州-吴中">
+	    </div>
+	            </a>
+	        </li>
+
+	    <li class="mui-table-view-cell">
+	        	<label>我的职务</label>
+	            <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="获取个性化的体验和服务">
+	    </div>
+	            </a>
+	        </li>
+	        
+	</ul>
+	
+	</div>
+	
+	<div class="butn">
+	<button type="button" data-loading-text="创建中" class="mui-btn mui-btn-primary">立即创建团队</button>
+	</div>
+	
+	</div>	
+	
+	<script type="text/javascript">
+mui(document.body).on('tap', '.mui-btn', function(e) {
+    mui(this).button('loading');
+    setTimeout(function() {
+        mui(this).button('reset');
+    }.bind(this), 2000);
+});
+
+</script>
+	
+	</div>
+	
+	</body>
+
+</html>

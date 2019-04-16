@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+      <div class="mui-content">		
+        <header class="mui-bar mui-bar-nav" style="background-color:#fff;">
+        	<div class="icb">
+        	<a class="iconfont icon-fanhui"></a>	
+        	</div>
+            <h1 class="mui-title gl">好友验证</h1>
+        </header>
+
+       </div>
+   
+   <div class="mui-content hyk">
+	
+	<ul class="mui-table-view dier">
+		
+	<li class="mui-table-view-cell diyi">
+	    <label>验证信息</label>
+	    <a class="mui-navigate-right">
+	    <div class="k1">
+	    <input type="text" placeholder="我是XXX">
+	    </div>
+	    </a>
+	</li>
+	 
+	<li class="mui-table-view-cell diyi">
+	    <label>备注名</label>
+	    <a class="mui-navigate-right">
+	    <div class="k1 k2">
+	    <input type="text" placeholder="张三">
+	    </div>
+	    </a>
+	</li>
+	 
+	</ul>
+	
+	<div class="tbgz zy">
+     	<p>不让对方看我的手机</p>	
+       
+       <div class="an1">
+       	
+        <div class="mui-switch hda">
+		<div class="mui-switch-handle hda1"></div>
+		</div>
+		
+	   </div>
+	</div>
+    
+    <div class="butn">
+	<button type="button" data-loading-text="发送中" class="mui-btn mui-btn-primary">发送申请</button>
+	</div>
+	
+	<script type="text/javascript">
+mui(document.body).on('tap', '.mui-btn', function(e) {
+    mui(this).button('loading');
+    setTimeout(function() {
+        mui(this).button('reset');
+    }.bind(this), 2000);
+});
+
+</script>
+	
+	
+	</div>  
+     
+	</body>
+
+</html>
